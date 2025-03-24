@@ -1,0 +1,10 @@
+def q11():
+    x1=int(input("Enter the x coordinate of first point"))
+    y1=int(input("Enter the y coordinate of first point"))
+    x2=int(input("Enter the x coordinate of second point"))
+    y2=int(input("Enter the y coordinate of second point"))
+    x3=int(input("Enter the x coordinate of third point"))
+    y3=int(input("Enter the y coordinate of third point"))
+    m1=(y2-y1)/(x2-x1)
+    m2=(y3-y2)/(x3-x2)
+    print("The points lie on same line") if(m1==m2) else print("Points don't lie on same line")
