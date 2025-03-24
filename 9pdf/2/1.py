@@ -4,23 +4,23 @@ def q1():
             return False
         if n == 2:
             return True
-        for i in range(2, int(n**0.5) + 1):  # Check only up to √n
+        for i in range(2, int(n**0.5) + 1):  
             if n % i == 0:
                 return False
         return True
 
-    l = []  # List to store prime factors
+    l = []  
 
     def primeFactors(n: int, i=2):
-        if n <= 1:  # Base case: when n is fully reduced
+        if n <= 1:  
             print(l)
             return
         while n % i == 0:
             l.append(i)
-            n //= i  # Reduce n
-        primeFactors(n, i + 1)  # Move to the next factor
+            n //= i  
+        primeFactors(n, i + 1)  
 
-    num = int(input("Enter a number: "))  # Allow user input
+    num = int(input("Enter a number: "))  
     primeFactors(num)
 
 q1()
